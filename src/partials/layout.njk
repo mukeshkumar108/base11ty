@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }}</title>
+        <meta name="description" content="{{ description }}">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <!-- TODO: separate header and footer into partials -->
+        <header>
+            This is the header
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            This is the footer
+        </footer>
+    </body>
+</html>

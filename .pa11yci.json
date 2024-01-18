@@ -1,0 +1,8 @@
+{
+    "default": {
+        "runners": [
+            "axe",
+            "htmlcs"
+        ]
+    }
+}
