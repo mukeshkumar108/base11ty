@@ -2,7 +2,8 @@ module.exports = {
     dir: {
         input: 'src/pages',
         output: 'dist',
-        includes: '../partials',
+        includes: '../',
+        layouts: '../layouts',
         flatten: 'true'
     },
     watch: {

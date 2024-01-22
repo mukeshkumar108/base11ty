@@ -1,7 +1,7 @@
 ---
 title: Contact
 description: this is an example contact page
-layout: layout.njk
+layout: main.njk
 ---
 
 # Contact us

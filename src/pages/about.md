@@ -1,7 +1,7 @@
 ---
 title: About
 description: this is an example about us page
-layout: layout.njk
+layout: main.njk
 ---
 
 # About us

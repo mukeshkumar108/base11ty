@@ -1,7 +1,7 @@
 ---
 title: Home
 description: this is the homepage
-layout: layout.njk
+layout: main.njk
 ---
 
 # Home Page
