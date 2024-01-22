@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: 'src/pages',
             output: 'dist',
-            includes: '../',
+            includes: '../partials',
             layouts: '../layouts',
             flatten: 'true'
         },
