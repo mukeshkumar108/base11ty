@@ -5,14 +5,15 @@ A simple base template to start a new 11ty project
 ### Features
 - Clean and simple, well-structured file organisation
 - SCSS configuration and build process
+- CSS build optimisation and minification
+- JS bundling with Parcel
 - added Bulma CSS library
 - Pre-built accessibility checks with pa11y-ci, axe and htmlcs
 - rimraf for cross os support and clean builds
 - example pages
+- partials and layouts
 
 ### TO DO
-- add css linting and incl linting into watch and build
-- organise partials
 - add image optimisation with eleventy-img incl shortcodes
 - add responsive navigation
 - import only necessary bulma options
