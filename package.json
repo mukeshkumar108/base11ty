@@ -2,18 +2,19 @@
   "name": "base11ty",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
-    "start": "run-p eleventy:dev sass:dev",
-    "build": "run-s eleventy:build sass:build",
+    "start": "run-p eleventy:dev sass:dev js:dev",
+    "build": "run-s eleventy:build sass:build js:build",
     "eleventy:dev": "eleventy --serve",
     "eleventy:build": "eleventy",
     "clean": "rimraf dist",
     "sass": "sass src/scss",
     "sass:dev": "sass --watch --embed-source-map src/scss:dist/css",
     "sass:build": "sass --no-source-map --style=compressed src/scss:dist/css && postcss dist/css/*.css --no-map -u autoprefixer -u cssnano -d dist/css",
+    "js:dev": "parcel watch src/js/main.js --dist-dir dist/js --no-cache",
+    "js:build": "parcel build src/js/main.js --dist-dir dist/js --no-cache --no-source-maps",
     "lint:html": "pa11y-ci -c .pa11yci.json './dist/**/*.html'"
   },
   "browserslist": [
@@ -31,6 +32,7 @@
     "cssnano": "^6.0.3",
     "npm-run-all": "^4.1.5",
     "pa11y-ci": "^3.1.0",
+    "parcel": "^2.11.0",
     "postcss": "^8.4.33",
     "postcss-cli": "^11.0.0",
     "rimraf": "^5.0.5"
