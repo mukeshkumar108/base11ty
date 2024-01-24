@@ -1,24 +1,10 @@
-@import "../../node_modules/bulma/bulma.sass";
+//@import "../../node_modules/bulma/bulma.sass";
+@import "_reset.scss";
+@import "_vars.scss";
+@import "_mediaqueries.scss";
+@import "_theme.scss";
 
-$primary-color: rgb(37, 39, 42);
-$accent-color: hotpink;
-$secondary-color: whitesmoke;
-
-html,
-body {
-  height: 100%;
-}
-
-body > footer {
-  position: sticky;
-  top: 100vh;
-}
-
-body {
-    background: $secondary-color;
-    color: $primary-color;
-}
-
-h1, h2, h3 {
-    color: $accent-color;
+img {
+  width: 100%;
+  height: auto;
 }
